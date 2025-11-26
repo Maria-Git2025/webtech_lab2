@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Вход - Мой Киноблог</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ШАПКА -->
+    <div class="header">
+      <h1>🎬 Мой Киноблог</h1>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="index.html#movies">Фильмы</a>
+        <a href="index.html#series">Сериалы</a>
+        <a href="feedback.html">Обратная связь</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+
+    <!-- ФОРМА АУТЕНТИФИКАЦИИ -->
+    <div class="auth-container">
+      <div class="auth-form">
+        <h2 class="auth-title">Вход в аккаунт</h2>
+
+        <form action="https://httpbin.org/post" method="post">
+          <!-- Логин -->
+          <div class="form-group">
+            <input
+              type="text"
+              name="login"
+              placeholder="Логин"
+              class="form-input"
+            />
+          </div>
+
+          <!-- Пароль -->
+          <div class="form-group">
+            <input
+              type="password"
+              name="password"
+              placeholder="Пароль"
+              class="form-input"
+            />
+          </div>
+
+          <!-- Запомнить меня -->
+          <div class="checkbox-group">
+            <input type="checkbox" name="remember" />
+            Запомнить меня
+          </div>
+
+          <!-- Кнопка входа -->
+          <div class="form-group">
+            <input type="submit" value="Войти" class="submit-btn" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ФУТЕР -->
+    <div class="footer">
+      <p>&copy; 2025 Мой Киноблог</p>
+      <p>Все права защищены</p>
+    </div>
+  </body>
+</html>
